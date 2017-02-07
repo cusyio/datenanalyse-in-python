@@ -1,7 +1,7 @@
 
 # Einstieg in pandas
 
-BILD: Kurzübersicht zu `pandas`
+![Kurzübersicht zu `pandas`: die meisten Daten in diesem Kurs sind als Tabellen vom Typ pd.DataFrame abgelegt. DataFrames bestehen aus einem Index und mehreren Spalten. Jede Spalte hat den Typ pd.Series](pandas_uebersicht.png)
 
 ## Die Arbeitsumgebung zur interaktiven Datenanalyse
 
