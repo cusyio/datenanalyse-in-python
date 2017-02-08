@@ -66,9 +66,16 @@ Durch die Integration mit interaktiven Analyseumgebungen wie IPython und Jupyter
 
 * Diagramme mit `matplotlib` erstellen
 * `matplotlib` aus `pandas` verwenden
-* qualitativ hochwertige Diagramme generieren
 * Daten in Jupyter notebooks visualisieren
-* andere Bibliotheken zur Datenvisualisierung
+  * %matplotlib inline
+* Arten von Diagrammen
+  * bar
+  * scatterplot
+  * heatmap
+  * multi-panel figures
+* qualitativ hochwertige Diagramme generieren
+* matplotlib gallery
+* andere Bibliotheken zur Datenvisualisierung: Bokeh, d3.js, Seaborn
 
 ## Tag 2
 
