@@ -31,7 +31,7 @@ Durch die Integration mit interaktiven Analyseumgebungen wie IPython und Jupyter
 | Einführung in pandas | Aggregatfunktionen |
 | Datenaufbereitung | Analyse von Zeitreihen |
 | Daten zusammenfassen | geographische Daten |
-| Datenvisualisierung | Einblick in maschinelles Lernen |
+| Datenvisualisierung | pandas in der Praxis |
 
 ## Tag 1
 
@@ -67,15 +67,10 @@ Durch die Integration mit interaktiven Analyseumgebungen wie IPython und Jupyter
 * Diagramme mit `matplotlib` erstellen
 * `matplotlib` aus `pandas` verwenden
 * Daten in Jupyter notebooks visualisieren
-  * %matplotlib inline
-* Arten von Diagrammen
-  * bar
-  * scatterplot
-  * heatmap
-  * multi-panel figures
+* Heatmaps
+* Multi-Panel-Diagramme
 * qualitativ hochwertige Diagramme generieren
-* matplotlib gallery
-* andere Bibliotheken zur Datenvisualisierung: Bokeh, d3.js, Seaborn
+* andere Bibliotheken zur Datenvisualisierung
 
 ## Tag 2
 
@@ -84,6 +79,7 @@ Durch die Integration mit interaktiven Analyseumgebungen wie IPython und Jupyter
 * Iteration über Zeilen und Spalten
 * Gruppieren
 * Aggregieren
+* Transformieren
 * Anwenden eigener Funktionen
 
 ### Analyse von Zeitreihen
@@ -98,16 +94,14 @@ Durch die Integration mit interaktiven Analyseumgebungen wie IPython und Jupyter
 ### Umgang mit geographischen Daten
 
 * Speichern von Koordinaten in `pandas`
-* Zeichnen von Karten mit `basemap`
-* Suche in geographischen Daten
+* Zeichnen von Karten mit `Basemap`
 
 
-### Einblick in maschinelles Lernen
+### Pandas in der Praxis
 
-* was kann maschinelles Lernen und was nicht?
+* Mythen und Fakten
+* Numpy
 * Modellbildung in scikit-learn
-* Validierung von Modellen
-* Fallstricke
-* Umgang mit großen Datensätzen
-* weitere Python-Pakete zur Datenmodellierung
-
+* alternative Programmpakete und Strategien zur Datenmodellierung
+* Umgang mit großen Datenmengen
+* Best Practices
