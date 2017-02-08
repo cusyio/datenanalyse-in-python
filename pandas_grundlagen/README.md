@@ -28,7 +28,6 @@ Lade Daten zur Weltbevölkerung:
 Probiere die 20 Pandas-Befehle auf den Karten aus. Gruppiere die Befehle wie Du es für sinnvoll hälst.
   
 
-
 ## Extras
 
 * Jupyter Notebooks
