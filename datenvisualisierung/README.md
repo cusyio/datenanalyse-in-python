@@ -12,3 +12,4 @@ Betrachte den Code. Stellt eine Übersicht der Funktionen aus dem Modul `pylab` 
 ### Aufgabe 3
 
 Führe eines der Beispielprogramme aus der [Matplotlib Gallery](http://matplotlib.org/gallery.html) aus.
+
