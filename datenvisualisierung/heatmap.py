@@ -14,3 +14,4 @@ plt.colorbar()
 plt.title("Heatmap der Funktion $\sin{(x^2 + y^2)}$")
 
 plt.savefig("heatmap.png")
+plt.savefig("heatmap.svg")

@@ -41,3 +41,4 @@ plt.axis([0.0, 20.0, -5, 5.0])
 
 plt.subplots_adjust(wspace=0.4, hspace=0.4)
 plt.savefig('multipanel.png')
+plt.savefig('multipanel.svg')

@@ -21,3 +21,4 @@ plt.axis([-5.0, 5.0, 0.0, 0.5])
 plt.grid(True)
 
 plt.savefig('histogramm.png')
+plt.savefig('histogramm.svg')

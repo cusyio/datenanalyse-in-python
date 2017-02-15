@@ -20,3 +20,4 @@ pie(count, explode=explode, labels=nucleotides, shadow=True,
     colors=colors, autopct=get_percent)
 
 savefig('tortendiagramm.png', dpi=150)
+savefig('tortendiagramm.svg', dpi=150)
