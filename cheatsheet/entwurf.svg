@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="425.96867"
+     inkscape:cy="362.62523"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2987"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(0,308.2677)"><flowRegion
+         id="flowRegion2989"><rect
+           id="rect2991"
+           width="430"
+           height="48.571438"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara2993"
+         style="font-size:30px">Pandas Cheat Sheet</flowPara></flowRoot>    <flowRoot
+       transform="translate(114.28572,981.12484)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot2995"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2997"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="48.571438"
+           width="430"
+           id="rect2999" /></flowRegion><flowPara
+         style="font-size:30px"
+         id="flowPara3001">by VSC, KR, AJ, TL</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3005"
+       sodipodi:cx="305"
+       sodipodi:cy="669.09448"
+       sodipodi:rx="29.285715"
+       sodipodi:ry="29.285715"
+       d="m 334.28572,669.09448 a 29.285715,29.285715 0 1 1 -58.57144,0 29.285715,29.285715 0 1 1 58.57144,0 z"
+       transform="translate(-234.28572,339.69628)" />
+    <path
+       style="fill:#2c89a0;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 70.71875 671.25 C 54.544696 671.25 41.4375 684.3572 41.4375 700.53125 C 41.4375 716.7053 54.544696 729.8125 70.71875 729.8125 C 70.960835 729.8125 71.196821 729.81834 71.4375 729.8125 L 71.4375 671.25 C 71.196821 671.24416 70.960835 671.25 70.71875 671.25 z "
+       transform="translate(0,308.2677)"
+       id="path3007" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3012"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(798.57143,969.69627)"><flowRegion
+         id="flowRegion3014"><rect
+           id="rect3016"
+           width="238.57144"
+           height="38.571438"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara3018"
+         style="font-size:30px">CC-BY-SA 4.0</flowPara></flowRoot>    <flowRoot
+       transform="translate(758.57142,832.55342)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3020"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3022"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="42.857151"
+           width="217.14287"
+           id="rect3024" /></flowRegion><flowPara
+         style="font-size:30px"
+         id="flowPara3026">Datenexport</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 740,379.50504 0,570"
+       id="path3028"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 278.57143,373.79075 0,584.28572"
+       id="path3030"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3032"
+       d="m 1023.5715,543.07647 -1000.000076,0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1023.5715,800.21933 -1000.000076,0"
+       id="path3034"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3036"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(58.571422,413.98199)"><flowRegion
+         id="flowRegion3038"><rect
+           id="rect3040"
+           width="217.14287"
+           height="42.857151"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara3042"
+         style="font-size:30px">Einstieg</flowPara></flowRoot>    <flowRoot
+       transform="translate(42.857136,589.69627)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3044"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3046"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="125.71429"
+           width="275.71429"
+           id="rect3048" /></flowRegion><flowPara
+         style="font-size:30px"
+         id="flowPara3050">Zeilen und Spalten </flowPara><flowPara
+         style="font-size:30px"
+         id="flowPara3052">indizieren</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3054"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(42.857136,826.83913)"><flowRegion
+         id="flowRegion3056"><rect
+           id="rect3058"
+           width="201.42859"
+           height="92.85714"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara3062"
+         style="font-size:30px">Arithmetik und Statistik</flowPara></flowRoot>    <flowRoot
+       transform="translate(774.28571,409.69627)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3066"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3068"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="92.85714"
+           width="201.42859"
+           id="rect3070" /></flowRegion><flowPara
+         style="font-size:30px"
+         id="flowPara3072">Aggregation</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3074"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(758.57142,633.98199)"><flowRegion
+         id="flowRegion3076"><rect
+           id="rect3078"
+           width="217.14287"
+           height="42.857151"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara3080"
+         style="font-size:30px">Visualisierung</flowPara></flowRoot>    <flowRoot
+       transform="translate(354.28571,826.83913)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3082"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3084"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="82.85714"
+           width="328.57144"
+           id="rect3086" /></flowRegion><flowPara
+         style="font-size:30px"
+         id="flowPara3088">DataFrames horizontal verbinden</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3090"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(354.28571,403.98198)"><flowRegion
+         id="flowRegion3092"><rect
+           id="rect3094"
+           width="328.57144"
+           height="82.85714"
+           x="18.571428"
+           y="8.3801966" /></flowRegion><flowPara
+         id="flowPara3096"
+         style="font-size:30px">Datenaufbereitung</flowPara></flowRoot>    <g
+       id="g3140"
+       transform="translate(-4.2857143,-2.8571428)">
+      <flowRoot
+         transform="translate(361.42857,549.69627)"
+         style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot3098"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3100"><rect
+             y="8.3801966"
+             x="18.571428"
+             height="228.57143"
+             width="350.00003"
+             id="rect3102" /></flowRegion><flowPara
+           id="flowPara3106"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold">df =</flowPara><flowPara
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+           id="flowPara3157">      col1  col2</flowPara><flowPara
+           id="flowPara3108"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold">A        1     4</flowPara><flowPara
+           id="flowPara3118"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold">B        2     5</flowPara><flowPara
+           id="flowPara3120"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold">C        3     6</flowPara><flowPara
+           id="flowPara3110"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold" /><flowPara
+           id="flowPara3112"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold" /><flowPara
+           id="flowPara3114"
+           style="font-size:30px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Courier New;-inkscape-font-specification:Courier New Bold" /></flowRoot>      <path
+         transform="translate(0,308.2677)"
+         inkscape:connector-curvature="0"
+         id="path3122"
+         d="m 361.42857,321.23734 322.85714,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 361.42857,668.07647 322.85714,0"
+         id="path3124"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3126"
+         d="m 361.42857,706.6479 322.85714,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 587.14285,593.79076 0,157.14285"
+         id="path3128"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3130"
+         d="m 468.57142,593.79076 0,157.14285"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <flowRoot
+       transform="translate(298.57143,752.55341)"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3132"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3134"><rect
+           y="8.3801966"
+           x="18.571428"
+           height="31.428568"
+           width="397.14288"
+           id="rect3136" /></flowRegion><flowPara
+         style="font-size:20px;font-style:italic;-inkscape-font-specification:Sans Italic"
+         id="flowPara3138">Datenbeispiel (mit exakt diesen Daten)</flowPara></flowRoot>  </g>
+</svg>
