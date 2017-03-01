@@ -1,25 +1,25 @@
 
 # pandas Cheat Sheet
 
-## Einstieg
+## Getting Started
 
-### pandas importieren
+### import pandas
 
     import pandas as pd
 
-### Series erstellen
+### create a Series
 
     s = pd.Series([1, 2, 3], index=['A', 'B', 'C'], name='col1')
 
-### DataFrame erstellen
+### create a DataFrame
 
     data = [[1, 4], [2, 5], [3, 6]]
     index = ['A', 'B', 'C']
     df = pd.DataFrame(data, index=index, columns=['col1', 'col2'])
 
-### DataFrame laden
+### load a DataFrame
 
-    df = pd.read_csv('dateiname.csv', 
+    df = pd.read_csv('filename.csv', 
          sep=',', 
          names=['col1', 'col2'], 
          index_col=0, 
@@ -27,150 +27,147 @@
          nrows=3)
 
 
+## Selecting Rows and Columns
 
-## Zeilen und Spalten indizieren
-
-### eine Spalte auswählen
+### select single Column
 
     df['col1']
 
-### mehrere Spalten auswählen
+### select multiple columns
 
     df[['col1', 'col2']]
  
-### erste n Zeilen anzeigen
+### show first n rows
 
     df.head(2)
 
-### letzte n Zeilen anzeigen
+### show last n rows
 
     df.tail(2)
 
-### Zeilen nach Index-Werten auswählen
+### select rows by index values
 
     df.ix['A']
     df.ix[['A', 'B']]
 
-### Zeilen nach Position auswählen
+### select rows by position
 
     df.ix[1]
     df.ix[1:]
 
 
 
-## Datenaufbereitung
+## Data Wrangling
 
-   
-### nach Werten filtern
+### filter by value
 
     df[df['col1'] > 1]
 
-### nach Spalten sortieren
+### sort by columns
 
     df.sort(['col2', 'col2'], ascending=[False, True])
 
 
-### doppelte Zeilen identifizieren
+### identify duplicate rows
 
     df.duplicated()
 
-### eindeutige Zeilen finden
+### identify unique rows
 
     df['col1'].unique()
 
-### Spalten und Zeilen vertauschen
+### swap rows and columns
 
     df = df.transpose()
 
-### eine Spalte löschen
+### remove a column
 
     del df['col2']
 
-### ganzes DataFrame kopieren
+### clone a DataFrame
 
-    kopie = df.copy()
+    clone = df.copy()
 
-### Mehrere DataFrames vertikal verketten
+### connect multiple DataFrames vertically
 
     df2 = df + 10
     pd.concat([df, df2])
     
 
-## DataFrames horizontal verbinden
+## Merge multiple DataFrames horizontally
 
     df3 = pd.DataFrame([[1, 7], [8, 9]], 
     	      index=['B', 'D'], 
     	      columns=['col1', 'col3'])
 
-### nur komplett definierte Zeilen (INNER JOIN)
+### only merge complete rows (INNER JOIN)
 
     df.merge(df3)
 
-### linke Spalte bleibt vollständig (LEFT OUTER JOIN)
+### left column stays complete (LEFT OUTER JOIN)
 
     df.merge(df3, how='left')
 
-### rechte Spalte bleibt vollständig (RIGHT OUTER JOIN)
+### right column stays complete (RIGHT OUTER JOIN)
 
     df.merge(df3, how='right')
     
-### alle Einträge vollständig (OUTER JOIN)
+### preserve all values (OUTER JOIN)
 
     df.merge(df3, how='outer')
 
-### Zeilen über Indices zusammenführen
+### merge rows by index
 
     df.merge(df3, left_index=True, right_index=True
 
-### unbesetzte Werte auffüllen 
+### fill NaN values
 
     df.fillna(0.0)
 
-### eigene Funktion anwenden
+### apply your own function
 
     def func(x): return 2**x
     df.apply(func)
 
 
+## Arithmetics and Statistics
 
-## Arithmetik und Statistik
-
-### Addition zu allen Werten 
+### add to all values
 
     df + 10
 
-### Summe über Spalten
+### sum over columns
 
     df.sum()
 
-### kumulative Summe über Spalten
+### cumulative sum over columns
 
     df.cumsum()
 
-### Mittelwert über Spalten
+### mean over columns
 
     df.mean()
 
-### Standardabweichung über Spalten
+### standard devieation over columns
 
     df.std()
 
-### Häufigkeit aller Werte ausgeben
+### count all values that occurr
 
     df['col1'].value_counts()
 
-### Deskriptive Statistiken für Spalten
+### summarize descriptive statistics
 
     df.describe()
 
 
-## hierarchische Indizierung
+## Hierarchical Indexing
 
-### hierarchischen Index erstellen
+### create hierarchical index
 
     df.stack()
 
-### hierarchischen Index auflösen
+### dissolve hierarchical index
 
     df.unstack()
 
@@ -178,16 +175,16 @@
 
 ## Aggregation
 
-### Gruppen bilden
+### create group object
 
     g = df.groupby('col1')
 
-### über Gruppen iterieren
+### iterate over groups
 
     for i, group in g:
         print(i, group)
 
-### Gruppen aggregieren
+### aggregate groups
 
     g.sum()
     g.prod()
@@ -195,100 +192,100 @@
     g.std()
     g.describe()
 
-### Spalten aus Gruppen auswählen
+### select columns from groups
 
     g['col2'].sum()
     g[['col2', 'col3']].sum()
 
-### Spalten transformieren
+### transform values
 
     import math
     g.transform(math.log)
 
-### eigene Listenfunktion auf jede Gruppe anwenden
+### apply a list function on each group
 
     def strsum(group):
         return ''.join([str(x) for x in group.values])
     g['col2'].apply(strsum)
 
 
-## Datenexport
+## Data Export
 
-### Daten als NumPy-Array
+### data as NumPy-Array
 
     df.values
 
-### Daten als CSV-Datei speichern
+### save data as CSV file
 
-    df.to_csv('ausgabe.csv', sep=",")
+    df.to_csv('output.csv', sep=",")
 
-### DataFrame als Tabellen-String formatieren
+### format DataFrame as tabular string
 
     df.to_string()
 
-### DataFrame zu Dictionary konvertieren
+### convert DataFrame to a dictionary
 
     df.to_dict()
 
-### DataFrame als Excel-Tabelle speichern
+### save DataFrame as Excel-table
 
-    df.to_excel('ausgabe.xlsx')
+    df.to_excel('output.xlsx')
 
-(benötigt Paket `xlwt`)
+(requires package `xlwt`)
 
-## Visualisierung
+## Visualization
 
-### matplotlib importieren
+### import matplotlib
 
     import pylab as plt
 
-### Neues Diagramm beginnen
+### start a new diagram
 
     plt.figure()
 
-### Streudiagramm
+### scatterplot
 
     df.plot.scatter('col1', 'col2', style='ro')
 
-### Balkendiagramm
+### bar plot
 
     df.plot.bar(x='col1', y='col2', width=0.7)
 
-### Flächendiagramm
+### area plot
 
     df.plot.area(stacked=True, alpha=1.0)
 
-### Box-and-Whisker-Plot
+### box-and-whisker-plot
 
     df.plot.box()
 
-### Histogramm über eine Spalte
+### histogram over one column
 
     df['col1'].plot.hist(bins=3)
 
-### Histogramm über alle Spalten
+### histogram over all columns
 
     df.plot.hist(bins=3, alpha=0.5)
 
-### Achsenmarkierungen einstellen
+### set tick marks
 
     labels = ['A', 'B', 'C', 'D']
     positions = [1.0, 2.0, 3.0, 4.0]
     plt.xticks(positions, labels)
     plt.yticks(positions, labels)
 
-### Zu plottenden Bereich wählen
+### select area to plot
     
     plt.axis([0.0, 2.5, 0.0, 10.0])
-    # [x von, x bis, y von, y bis]
+    # [from x, to x, from y, to y]
 
-### Diagramm und Achsen beschriften
+### Label diagram and axes
 
-    plt.title('Korrelation')
+    plt.title('Correlation')
     plt.xlabel('Nunstück')
     plt.ylabel('Slotermeyer')
 
-### zuletzt generiertes Diagramm speichern
+### save most recent diagram
 
     plt.savefig('plot.png')
     plt.savefig('plot.png', dpi=300)
