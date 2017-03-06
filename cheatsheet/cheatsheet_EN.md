@@ -1,293 +1,398 @@
 
-# pandas Cheat Sheet
+# Pandas cheat sheet
 
-## Getting Started
+## Getting started
 
-### import pandas
+### Import pandas:
 
-    import pandas as pd
+```python
+import pandas as pd
+```
 
-### create a Series
+### Create a series:
 
-    s = pd.Series([1, 2, 3], index=['A', 'B', 'C'], name='col1')
+```python
+s = pd.Series([1, 2, 3], index=['A', 'B', 'C'], name='col1')
+```
 
-### create a DataFrame
+### Create a data frame:
 
-    data = [[1, 4], [2, 5], [3, 6]]
-    index = ['A', 'B', 'C']
-    df = pd.DataFrame(data, index=index, columns=['col1', 'col2'])
+```python
+data = [[1, 4], [2, 5], [3, 6]]
+index = ['A', 'B', 'C']
+df = pd.DataFrame(data, index=index, columns=['col1', 'col2'])
+```
 
-### load a DataFrame
+### Load a data frame:
 
-    df = pd.read_csv('filename.csv', 
-         sep=',', 
-         names=['col1', 'col2'], 
-         index_col=0, 
-         encoding='utf-8',
-         nrows=3)
+```python
+df = pd.read_csv('filename.csv', 
+     sep=',', 
+     names=['col1', 'col2'], 
+     index_col=0, 
+     encoding='utf-8',
+     nrows=3)
+```
 
+## Selecting rows and columns
 
-## Selecting Rows and Columns
+### Select single column:
 
-### select single Column
+```python
+df['col1']
+```
 
-    df['col1']
+### Select multiple columns:
 
-### select multiple columns
+```python
+df[['col1', 'col2']]
+```
 
-    df[['col1', 'col2']]
- 
-### show first n rows
+### Show first n rows:
 
-    df.head(2)
+```python
+df.head(2)
+```
 
-### show last n rows
+### Show last n rows:
 
-    df.tail(2)
+```python
+df.tail(2)
+```
 
-### select rows by index values
+### Select rows by index values:
 
-    df.ix['A']
-    df.ix[['A', 'B']]
+```python
+df.ix['A']
+df.ix[['A', 'B']]
+```
 
-### select rows by position
+### Select rows by position:
 
-    df.ix[1]
-    df.ix[1:]
+```python
+df.ix[1]
+df.ix[1:]
+```
 
+## Data wrangling
 
+### Filter by value:
 
-## Data Wrangling
+```python
+df[df['col1'] > 1]
+```
 
-### filter by value
+### Sort by columns:
 
-    df[df['col1'] > 1]
+```python
+df.sort(['col2', 'col2'], ascending=[False, True])
+```
 
-### sort by columns
+### Identify duplicate rows:
 
-    df.sort(['col2', 'col2'], ascending=[False, True])
+```python
+df.duplicated()
+```
 
+### Identify unique rows:
 
-### identify duplicate rows
+```python
+df['col1'].unique()
+```
 
-    df.duplicated()
+### Swap rows and columns:
 
-### identify unique rows
+```python
+df = df.transpose()
+```
 
-    df['col1'].unique()
+### Remove a column:
 
-### swap rows and columns
+```python
+del df['col2']
+```
 
-    df = df.transpose()
+### Clone a data frame:
 
-### remove a column
+```python
+clone = df.copy()
+```
 
-    del df['col2']
+### Connect multiple data frames vertically:
 
-### clone a DataFrame
+```python
+df2 = df + 10
+pd.concat([df, df2])
+```
 
-    clone = df.copy()
+## Merge multiple data frames horizontally:
 
-### connect multiple DataFrames vertically
+```python
+df3 = pd.DataFrame([[1, 7], [8, 9]], 
+	      index=['B', 'D'], 
+	      columns=['col1', 'col3'])
+```
 
-    df2 = df + 10
-    pd.concat([df, df2])
+### Only merge complete rows (INNER JOIN):
+
+```python
+df.merge(df3)
+```
+
+### Left column stays complete (LEFT OUTER JOIN):
+
+```python
+df.merge(df3, how='left')
+```
+
+### Right column stays complete (RIGHT OUTER JOIN):
+
+```python
+df.merge(df3, how='right')
+```
     
+### Preserve all values (OUTER JOIN):
 
-## Merge multiple DataFrames horizontally
+```python
+df.merge(df3, how='outer')
+```
 
-    df3 = pd.DataFrame([[1, 7], [8, 9]], 
-    	      index=['B', 'D'], 
-    	      columns=['col1', 'col3'])
+### Merge rows by index:
 
-### only merge complete rows (INNER JOIN)
+```python
+df.merge(df3, left_index=True, right_index=True
+```
 
-    df.merge(df3)
+### Fill NaN values:
 
-### left column stays complete (LEFT OUTER JOIN)
+```python
+df.fillna(0.0)
+```
 
-    df.merge(df3, how='left')
+### Apply your own function:
 
-### right column stays complete (RIGHT OUTER JOIN)
+```python
+def func(x): return 2**x
+df.apply(func)
+```
 
-    df.merge(df3, how='right')
-    
-### preserve all values (OUTER JOIN)
+## Arithmetics and statistics
 
-    df.merge(df3, how='outer')
+### Add to all values:
 
-### merge rows by index
+```python
+df + 10
+```
 
-    df.merge(df3, left_index=True, right_index=True
+### Sum over columns:
 
-### fill NaN values
+```python
+df.sum()
+```
 
-    df.fillna(0.0)
+### Cumulative sum over columns:
 
-### apply your own function
+```python
+df.cumsum()
+```
 
-    def func(x): return 2**x
-    df.apply(func)
+### Mean over columns:
 
+```python
+df.mean()
+```
 
-## Arithmetics and Statistics
+### Standard devieation over columns:
 
-### add to all values
+```python
+df.std()
+```
 
-    df + 10
+### Count all values that occurr:
 
-### sum over columns
+```python
+df['col1'].value_counts()
+```
 
-    df.sum()
+### Summarize descriptive statistics:
 
-### cumulative sum over columns
+```python
+df.describe()
+```
 
-    df.cumsum()
+## Hierarchical indexing
 
-### mean over columns
+### Create hierarchical index:
 
-    df.mean()
+```python
+df.stack()
+```
 
-### standard devieation over columns
+### Dissolve hierarchical index:
 
-    df.std()
-
-### count all values that occurr
-
-    df['col1'].value_counts()
-
-### summarize descriptive statistics
-
-    df.describe()
-
-
-## Hierarchical Indexing
-
-### create hierarchical index
-
-    df.stack()
-
-### dissolve hierarchical index
-
-    df.unstack()
-
-
+```python
+df.unstack()
+```
 
 ## Aggregation
 
-### create group object
+### Create group object:
 
-    g = df.groupby('col1')
+```python
+g = df.groupby('col1')
+```
 
-### iterate over groups
+### Iterate over groups:
 
-    for i, group in g:
-        print(i, group)
+```python
+for i, group in g:
+    print(i, group)
+```
 
-### aggregate groups
+### Aggregate groups:
 
-    g.sum()
-    g.prod()
-    g.mean()
-    g.std()
-    g.describe()
+```python
+g.sum()
+g.prod()
+g.mean()
+g.std()
+g.describe()
+```
 
-### select columns from groups
+### Select columns from groups:
 
-    g['col2'].sum()
-    g[['col2', 'col3']].sum()
+```python
+g['col2'].sum()
+g[['col2', 'col3']].sum()
+```
 
-### transform values
+### Transform values:
 
-    import math
-    g.transform(math.log)
+```python
+import math
+g.transform(math.log)
+```
 
-### apply a list function on each group
+### Apply a list function on each group:
 
-    def strsum(group):
-        return ''.join([str(x) for x in group.values])
-    g['col2'].apply(strsum)
+```python
+def strsum(group):
+    return ''.join([str(x) for x in group.values])
+g['col2'].apply(strsum)
+```
 
+## Data export
 
-## Data Export
+### Data as NumPy array:
 
-### data as NumPy-Array
+```python
+df.values
+```
 
-    df.values
+### Save data as CSV file:
 
-### save data as CSV file
+```python
+df.to_csv('output.csv', sep=",")
+```
 
-    df.to_csv('output.csv', sep=",")
+### Format a data frame as tabular string:
 
-### format DataFrame as tabular string
+```python
+df.to_string()
+```
 
-    df.to_string()
+### Convert a data frame to a dictionary:
 
-### convert DataFrame to a dictionary
+```python
+df.to_dict()
+```
 
-    df.to_dict()
+### Save a data frame as Excel table:
 
-### save DataFrame as Excel-table
-
-    df.to_excel('output.xlsx')
+```python
+df.to_excel('output.xlsx')
+```
 
 (requires package `xlwt`)
 
 ## Visualization
 
-### import matplotlib
+### Import matplotlib:
 
-    import pylab as plt
+```python
+import pylab as plt
+```
 
-### start a new diagram
+### Start a new diagram:
 
-    plt.figure()
+```python
+plt.figure()
+```
 
-### scatterplot
+### Scatter plot:
 
-    df.plot.scatter('col1', 'col2', style='ro')
+```python
+df.plot.scatter('col1', 'col2', style='ro')
+```
 
-### bar plot
+### Bar plot:
 
-    df.plot.bar(x='col1', y='col2', width=0.7)
+```python
+df.plot.bar(x='col1', y='col2', width=0.7)
+```
 
-### area plot
+### Area plot:
 
-    df.plot.area(stacked=True, alpha=1.0)
+```python
+df.plot.area(stacked=True, alpha=1.0)
+```
 
-### box-and-whisker-plot
+### Box-and-whisker plot:
 
-    df.plot.box()
+```python
+df.plot.box()
+```
 
-### histogram over one column
+### Histogram over one column:
 
-    df['col1'].plot.hist(bins=3)
+```python
+df['col1'].plot.hist(bins=3)
+```
 
-### histogram over all columns
+### Histogram over all columns:
 
-    df.plot.hist(bins=3, alpha=0.5)
+```python
+df.plot.hist(bins=3, alpha=0.5)
+```
 
-### set tick marks
+### Set tick marks:
 
-    labels = ['A', 'B', 'C', 'D']
-    positions = [1.0, 2.0, 3.0, 4.0]
-    plt.xticks(positions, labels)
-    plt.yticks(positions, labels)
+```python
+labels = ['A', 'B', 'C', 'D']
+positions = [1.0, 2.0, 3.0, 4.0]
+plt.xticks(positions, labels)
+plt.yticks(positions, labels)
+```
 
-### select area to plot
-    
-    plt.axis([0.0, 2.5, 0.0, 10.0])
-    # [from x, to x, from y, to y]
+### Select area to plot:
 
-### Label diagram and axes
+```python
+plt.axis([0.0, 2.5, 0.0, 10.0])
+# [from x, to x, from y, to y]
+```
 
-    plt.title('Correlation')
-    plt.xlabel('Nunstück')
-    plt.ylabel('Slotermeyer')
+### Label diagram and axes:
 
-### save most recent diagram
+```python
+plt.title('Correlation')
+plt.xlabel('Nunstück')
+plt.ylabel('Slotermeyer')
+```
 
-    plt.savefig('plot.png')
-    plt.savefig('plot.png', dpi=300)
-    plt.savefig('plot.svg')
+### Save most recent diagram:
 
+```python
+plt.savefig('plot.png')
+plt.savefig('plot.png', dpi=300)
+plt.savefig('plot.svg')
+```
