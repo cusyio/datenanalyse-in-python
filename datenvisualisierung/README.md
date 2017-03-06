@@ -1,15 +1,23 @@
 
 # Datenvisualisierung
 
-### Aufgabe 1
+Die Übungen zur Datenvisualisierung bestehen aus sechs Teilen:
 
-Führe einige der Skripten zum Erzeugen von Diagrammen mit `matplotlib` aus.
+| Übung | Beschreibung | Schwierigkeitsgrad |
+|-------|--------------|--------------------|
+|   1   | Balkendiagramm plotten | LEICHT   |
+|   2   | Korrelation plotten | LEICHT      |
+|   3   | Histogramm plotten            | MITTEL |
+|   4   | mehrere Korrelationen plotten | MITTEL |
+|   5   | animierter Scatterplot        | SCHWER |
+|   6   | Übungen für Quereinsteiger    | SEHR LEICHT |
 
-### Aufgabe 2
 
-Betrachte den Code. Stellt eine Übersicht der Funktionen aus dem Modul `pylab` zusammen.
+### Empfohlene Materialien
 
-### Aufgabe 3
+* Beispielskripte zum plotten mit `pandas` und `matplotlib`
+* Tabellen zur Demographie von [www.gapminder.org](http://www.gapminder.org)
+* Tutorial zum plotten mit `pandas` auf [pandas.pydata.org/pandas-docs/stable/visualization.html](http://pandas.pydata.org/pandas-docs/stable/visualization.html)
+* Matplotlab Gallery [matplotlib.org/gallery.html](http://matplotlib.org/gallery.html)
 
-Führe eines der Beispielprogramme aus der [Matplotlib Gallery](http://matplotlib.org/gallery.html) aus.
 

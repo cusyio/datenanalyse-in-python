@@ -5,7 +5,6 @@ import numpy as np
 import random
 from PIL import Image as im
 
-
 panda = im.open('panda.png')
 panda = panda.convert('L')
 
@@ -23,16 +22,12 @@ pp = pp[pp > 0]
 
 pp.to_csv('panda.csv')
 pr = pd.read_csv('panda.csv', names=['x', 'y', 'col'])
-
 pr['y'] *= -1
 
 
 def sample(val):
     ri = random.randint(1, 1024)
-    if ri > val:
-        return False
-    else:
-        return True
+    return ri <= val
 
 
 pandasample = pr['col'].apply(sample)
