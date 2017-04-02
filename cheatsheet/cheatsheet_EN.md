@@ -163,10 +163,11 @@ df.merge(df3, how='outer')
 df.merge(df3, left_index=True, right_index=True
 ```
 
-### Fill NaN values:
+### Fill or remove NaN values:
 
 ```python
 df.fillna(0.0)
+df.dropna()
 ```
 
 ### Apply your own function:

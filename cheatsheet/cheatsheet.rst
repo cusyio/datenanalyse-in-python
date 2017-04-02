@@ -190,12 +190,13 @@ Zeilen über Indices zusammenführen
 
     df.merge(df3, left_index=True, right_index=True
 
-unbesetzte Werte auffüllen
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+unbesetzte Werte auffüllen oder löschen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
     df.fillna(0.0)
+    df.dropna()
 
 eigene Funktion anwenden
 ~~~~~~~~~~~~~~~~~~~~~~~~

@@ -163,10 +163,11 @@ df.merge(df3, how='outer')
 df.merge(df3, left_index=True, right_index=True
 ```
 
-### unbesetzte Werte auffüllen 
+### unbesetzte Werte auffüllen oder löschen
 
 ```python
 df.fillna(0.0)
+df.dropna()
 ```
 
 ### eigene Funktion anwenden
