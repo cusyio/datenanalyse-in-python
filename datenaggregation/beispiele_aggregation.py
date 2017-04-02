@@ -1,58 +1,58 @@
 
-from beispiele_gruppen import g1
+from beispiele_gruppen import g1, g2, g3, g4, g5, g6
 
 # Aggregation mit Standardfunktionen
-g1.mean()
-g1.max()
-g1.min()
-g1.sum()
-g1.count()
-g1.std()
-g1.median()
-g1.quantile(0.9)
-g1.describe()
+gx.mean()
+gx.max()
+gx.min()
+gx.sum()
+gx.count()
+gx.std()
+gx.median()
+gx.quantile(0.9)
+gx.describe()
 
 # Aggregation mit Spaltenauswahl
-g1['population'].describe()
+gx['population'].describe()
 
 # Aggregation mit Liste von Funktionen
-g1.agg(['count', 'mean', 'std'])
-g1.agg([('Summe', 'sum')])
+gx.agg(['count', 'mean', 'std'])
+gx.agg([('Summe', 'sum')])
 
 # Eigene Aggregatfunktion definieren
 def summe_groesser200(array):
     return sum([x for x in array if x>200])
 
-g1.agg(summe_groesser200)
+gx.agg(summe_groesser200)
 
 # Eigene Aggregatfunktion mit Parameter
 def summe_groesser(array, threshold):
     return sum([x for x in array if x>threshold])
 
-g1.agg(summe_groesser, threshold=200)
+gx.agg(summe_groesser, threshold=200)
 
 # Iterieren über Gruppen
-for name, group in g1:
+for name, group in gx:
     print(name)
     print(group)
 
 # Gruppen als Dictionary
-dict(list(g1))
+dict(list(gx))
 
 # Transformation mit Funktionsname
-g1.transform('mean')
+gx.transform('mean')
 
 # Transformation mit Funktion
-g1.transform(len)
+gx.transform(len)
 
 # Transformation mit eigener Funktion
 def normalisieren(array):
     return array - array.mean()
 
-g1.transform(normalisieren)
+gx.transform(normalisieren)
 
 # Beliebige Funktion anwenden
-def dummy(df):
-    return pd.DataFrame([[1,2,3], [4,5,6]])
+def erste_zwei(df):
+    return df.head(2)
 
-g1.apply(dummy)
+gx.apply(erste_zwei)

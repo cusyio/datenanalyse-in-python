@@ -29,4 +29,4 @@ Verwende die Methode `to_csv`, um die Daten in einem einheitlichen Format zu spe
 
 ### Aufgabe 6
 
-Verwende die Methode `to_dict`, um die Daten in ein Dictionary zu überführen. Welche Vor- und Nachteile bietet ein Dictionary gegenüber einem DataFrage?
+Verwende die Methode `to_dict`, um die Daten in ein Dictionary zu überführen. Welche Vor- und Nachteile bietet ein Dictionary gegenüber einem DataFrame?

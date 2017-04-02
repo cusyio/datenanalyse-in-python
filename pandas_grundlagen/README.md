@@ -7,9 +7,7 @@
 
 ### Aufgabe 1
 
-IPython starten
-
-TABELLE MAGIC FUNCTIONS
+starte die IPython Konsole über Anaconda
 
 ### Aufgabe 2
 
@@ -25,8 +23,12 @@ Lade Daten zur Weltbevölkerung:
 
 ### Aufgabe 4
 
-Probiere die 20 Pandas-Befehle auf den Karten aus. Gruppiere die Befehle wie Du es für sinnvoll hälst.
-  
+Probiere die 20 Pandas-Befehle von den Karten aus.
+
+### Aufgabe 5
+
+Gruppiert die Befehle gemeinsam so, wie Ihr es für sinnvoll haltet.
+ 
 
 ## Extras
 

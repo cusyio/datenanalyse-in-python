@@ -119,7 +119,7 @@ df.tail(3)
 #### 1. bla (★☆☆)
 
 ```python
-df.shape()
+df.shape
 ```
 
 #### 1. bla (★☆☆)

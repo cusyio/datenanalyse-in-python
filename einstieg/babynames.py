@@ -34,7 +34,7 @@ for year in range(1880, 2015):
 # Reading a dataset with pandas
 
 names = pd.concat(names)
-print(names[:10])
+print(names.head(10))
 
 
 # Statistics for girls names
