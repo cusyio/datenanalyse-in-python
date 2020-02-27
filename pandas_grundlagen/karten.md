@@ -76,7 +76,7 @@ df[['population', 'continent']]
 #### 1. bla (★☆☆)
 
 ```python
-df.ix[3:7]
+df.loc[3:7]
 ```
 
 #### 1. bla (★☆☆)

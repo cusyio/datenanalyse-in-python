@@ -63,15 +63,15 @@ df.tail(2)
 ### Select rows by index values:
 
 ```python
-df.ix['A']
-df.ix[['A', 'B']]
+df.loc['A']
+df.loc[['A', 'B']]
 ```
 
 ### Select rows by position:
 
 ```python
-df.ix[1]
-df.ix[1:]
+df.loc[1]
+df.loc[1:]
 ```
 
 ## Data wrangling

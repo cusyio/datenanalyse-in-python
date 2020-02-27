@@ -19,7 +19,7 @@ Wähle 3 Jahrgänge aus den Spalten des `DataFrame` aus, z.B.:
 
 Wähle 4 Länder aus dem Index des `DataFrame`aus, z.B.:
 
-    df = df.ix[['Germany', 'India', 'Bulgaria', 'Kenia']]
+    df = df.loc[['Germany', 'India', 'Bulgaria', 'Kenia']]
 
 ### Schritt 4
 

@@ -75,16 +75,16 @@ Zeilen nach Index-Werten auswählen
 
 ::
 
-    df.ix['A']
-    df.ix[['A', 'B']]
+    df.loc['A']
+    df.loc[['A', 'B']]
 
 Zeilen nach Position auswählen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
-    df.ix[1]
-    df.ix[1:]
+    df.loc[1]
+    df.loc[1:]
 
 Datenaufbereitung
 -----------------
