@@ -209,7 +209,7 @@ df.mean()
 df.std()
 ```
 
-### Count all values that occurr:
+### Count unique values:
 
 ```python
 df['col1'].value_counts()
