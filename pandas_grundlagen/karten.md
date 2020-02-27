@@ -151,7 +151,7 @@ df.stack()
 #### 1. bla (★☆☆)
 
 ```python
-df.sort(['continent', 'fertility'])
+df.sort_values(['continent', 'fertility'])
 ```
 
 #### 1. bla (★☆☆)

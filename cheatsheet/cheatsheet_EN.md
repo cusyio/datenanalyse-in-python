@@ -85,7 +85,7 @@ df[df['col1'] > 1]
 ### Sort by columns:
 
 ```python
-df.sort(['col2', 'col2'], ascending=[False, True])
+df.sort_values(['col2', 'col2'], ascending=[False, True])
 ```
 
 ### Identify duplicate rows:

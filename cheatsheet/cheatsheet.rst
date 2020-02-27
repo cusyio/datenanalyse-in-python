@@ -101,7 +101,7 @@ nach Spalten sortieren
 
 ::
 
-    df.sort(['col2', 'col2'], ascending=[False, True])
+    df.sort_values(['col2', 'col2'], ascending=[False, True])
 
 doppelte Zeilen identifizieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
